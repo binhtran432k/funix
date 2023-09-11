@@ -11,3 +11,4 @@ My Funix's labs and assignments.
 - Lab 2.4: Fill in the Blank with Placeholder Text
 - Lab 2.5: Comment out HTML
 - Lab 2.6: Uncomment HTML
+- Lab 2.7: Create a Bulleted Unordered List
