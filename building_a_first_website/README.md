@@ -6,3 +6,4 @@ My Funix's labs and assignments.
 
 - Lab 1.1: Install VSCode and build a first website
 - Lab 2.1: Opening of HTML elements
+- Lab 2.1: Headline with the h2 Element
