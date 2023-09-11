@@ -10,3 +10,4 @@ My Funix's labs and assignments.
 - Lab 2.3: Inform with the Paragraph Element
 - Lab 2.4: Fill in the Blank with Placeholder Text
 - Lab 2.5: Comment out HTML
+- Lab 2.6: Uncomment HTML
