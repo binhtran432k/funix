@@ -1,10 +1,5 @@
 # Funix
 
-My Funix's labs and assignments.
+My Funix's labs and assignments. Includes
 
-## Starter
-
-[03-CSS-Fundamentals](./03-CSS-Fundamentals) includes:
-
-- Lab 3.9: Building a news website structure 
-- Lab 3.10: Building a sales website structure 
+- [Building a First Website](./building_a_first_website)
