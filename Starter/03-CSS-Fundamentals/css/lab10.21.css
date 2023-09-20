@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  display: flex;
+  gap: 2.5rem;
+}
+
+/* PRODUCT */
+.product {
+  border: .25rem solid black;
+  width: 51.5rem;
+  margin: 3.125rem auto;
+  position: relative;
+}
+
+.sale {
+  background: #ec2f2f;
+  color: #fff;
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .125em;
+  padding: .6em 1.25em;
+  display: inline-block;
+  position: absolute;
+  top: -1.1rem;
+  left: -2.2rem;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 1.375em;
+  text-transform: uppercase;
+  background-color: #f1f7f7;
+  padding: 1rem;
+}
+
+/* PRODUCT INFORMATION */
+.product-info {
+  flex: 1;
+  width: 15.18rem;
+  margin-top: 1.25rem;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.price {
+  font-size: 1.5em;
+}
+
+.shipping {
+  font-size: .75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
+}
+
+.more-info:link, .more-info:visited {
+  color: black;
+}
+
+.more-info:hover, .more-info:active {
+  text-decoration: none;
+}
+
+.product-colors {
+  display: flex;
+  gap: 0.625rem;
+}
+
+/* PRODUCT DETAILS */
+.product-details {
+  margin-top: 1.25rem;
+  flex: 1;
+}
+
+.product-description {
+  margin-bottom: 0.625rem;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 1.25rem;
+}
+
+.details-list li {
+  margin-bottom: .625rem;
+}
+
+/* BUTTON */
+.add-cart {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border-top: .25rem solid black;
+}
+
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* COLOR */
+.color {
+  background-color: #000;
+  height: 1.375em;
+  width: 1.375em;
+
+  display: inline-block;
+  margin-right: .625em;
+  margin-top: .625em;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+
+.color-red {
+  background-color: #ec2f2f;
+}
+
+.color-yellow {
+  background-color: #f0bf1b;
+}
+
+.color-green {
+  background-color: #90cc20;
+}
+
+.color-brown {
+  background-color: #885214;
+}
