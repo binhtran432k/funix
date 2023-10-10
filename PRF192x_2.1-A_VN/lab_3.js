@@ -80,4 +80,43 @@ function checkPopulation(country) {
   );
 }
 
-checkPopulation("Vietnam");
+function whoIsWin() {
+  /**
+   * @param {number[]} scores
+   */
+  function calcAverage(scores) {
+    return scores.length === 0
+      ? 0
+      : scores.reduce((p, c) => p + c, 0) / scores.length;
+  }
+  function checkDolphinsWin(dolphins, koalas) {
+    const dolphinsAverageScore = calcAverage(dolphins);
+    const koalasAverageScore = calcAverage(koalas);
+    if (
+      dolphinsAverageScore > koalasAverageScore &&
+      dolphinsAverageScore >= 100
+    ) {
+      console.log(`Dolphins ${dolphinsAverageScore} > ${koalasAverageScore}`);
+    } else if (
+      dolphinsAverageScore < koalasAverageScore &&
+      koalasAverageScore >= 100
+    ) {
+      console.log(`Koalas ${koalasAverageScore} > ${dolphinsAverageScore}`);
+    } else if (
+      dolphinsAverageScore === koalasAverageScore &&
+      dolphinsAverageScore >= 100
+    ) {
+      console.log(`Both win the trophy! ${dolphinsAverageScore}`);
+    } else {
+      console.log(`No one! ${dolphinsAverageScore}, ${koalasAverageScore}`);
+    }
+  }
+
+  checkDolphinsWin([96, 108, 96], [88, 92, 120]);
+  checkDolphinsWin([96, 108, 89], [88, 91, 110]);
+  checkDolphinsWin([97, 132, 101], [109, 95, 123]);
+  checkDolphinsWin([97, 112, 101], [109, 95, 123]);
+  checkDolphinsWin([97, 112, 101], [109, 95, 106]);
+}
+
+whoIsWin();
