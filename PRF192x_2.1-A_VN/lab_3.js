@@ -22,4 +22,28 @@ function fu3_2() {
   }
 }
 
-fu3_2();
+function fu3_3() {
+  function stringToBoolean(txt) {
+    return txt === "false" ? false : !!txt;
+  }
+  const expectedLanguage = "English";
+  const expectedPopulation = 50;
+  const expectedIsIsland = false;
+  const country = prompt("Where are you from? ");
+  const language = prompt("Which language do you use in your country? ");
+  const population = Number(
+    prompt("What is the population(In millions) of your country? "),
+  );
+  const isIsland = stringToBoolean(prompt("Is your country a island? "));
+  if (
+    language === expectedLanguage &&
+    population < expectedPopulation &&
+    isIsland === expectedIsIsland
+  ) {
+    console.log(`You should live in ${country} :)`);
+  } else {
+    console.log(`${country} does not meet your criteria :(`);
+  }
+}
+
+fu3_3();
