@@ -1,7 +1,7 @@
 // Setup prompt
 const prompt = require("prompt-sync")();
 
-function fu3_1() {
+function simpleMath() {
   console.log("9" - "5"); // 4
   console.log("19" - "13" + "17"); // 617
   console.log("19" - "13" + 17); // 23
@@ -9,7 +9,7 @@ function fu3_1() {
   console.log(5 + 6 + "4" + 9 - 4 - 2); // 1143
 }
 
-function fu3_2() {
+function checkNeighbors() {
   const numNeighbours = prompt(
     "How many neighbor countries does your country have? ",
   );
@@ -22,7 +22,7 @@ function fu3_2() {
   }
 }
 
-function fu3_3() {
+function findCountry() {
   function stringToBoolean(txt) {
     return txt === "false" ? false : !!txt;
   }
@@ -46,4 +46,4 @@ function fu3_3() {
   }
 }
 
-fu3_3();
+findCountry();
