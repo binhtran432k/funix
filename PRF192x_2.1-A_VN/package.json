@@ -1,0 +1,14 @@
+{
+  "name": "prf192x_2.1-a_vn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lab_2-6.js",
+  "scripts": {
+    "l3": "node lab_3"
+  },
+  "author": "Binh Duc Tran - binhtran432k@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
