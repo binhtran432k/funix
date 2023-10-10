@@ -28,8 +28,9 @@ console.log(
     population < averagePopulation
   }`,
 );
-console.log(
-  `${country} and its ${(population / 1000000).toFixed(
-    2,
-  )} million people speak ${language}`,
-);
+
+const description = `${country} and its ${(population / 1000000).toFixed(
+  2,
+)} million people speak ${language}`;
+
+console.log(description);
