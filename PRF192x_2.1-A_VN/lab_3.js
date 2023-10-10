@@ -119,4 +119,23 @@ function whoIsWin() {
   checkDolphinsWin([97, 112, 101], [109, 95, 106]);
 }
 
-whoIsWin();
+function tipCalculator() {
+  function calcTip(bill) {
+    if (50 <= bill && bill <= 300) {
+      return bill * 0.15;
+    }
+    return bill * 0.2;
+  }
+  function _tipCalculator(bill) {
+    const tip = calcTip(bill);
+    console.log(
+      `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip
+      }`,
+    );
+  }
+  _tipCalculator(275);
+  _tipCalculator(40);
+  _tipCalculator(430);
+}
+
+tipCalculator();
