@@ -19,15 +19,20 @@ console.log("-> Increase population by 1");
 population += 1;
 console.log(`population: ${population}`);
 console.log(
-  `is population bigger than Finland's population: ${
-    population > finlandPopulation
+  `is population bigger than Finland's population: ${population > finlandPopulation
   }`,
 );
-console.log(
-  `is population lesser than average population: ${
-    population < averagePopulation
-  }`,
-);
+
+if (population > averagePopulation) {
+  console.log(`${country}'s population is above average`);
+} else {
+  console.log(
+    `${country}'s population is ${(
+      (averagePopulation - population) /
+      1000000
+    ).toFixed(2)} million below average`,
+  );
+}
 
 const description = `${country} and its ${(population / 1000000).toFixed(
   2,
