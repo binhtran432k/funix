@@ -71,4 +71,13 @@ function checkLanguage() {
   }
 }
 
-checkLanguage();
+function checkPopulation(country) {
+  const population = prompt("Population (Millions)? ");
+  console.log(
+    population > 33
+      ? `${country}'s population is above average`
+      : `${country}'s population is below average`,
+  );
+}
+
+checkPopulation("Vietnam");
