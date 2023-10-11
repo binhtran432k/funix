@@ -14,12 +14,15 @@
  * @property {boolean} dewormed
  * @property {boolean} sterilized
  * @property {Date} date
+ * @property {number} bmi
  */
 
 /** @type {HTMLButtonElement} */
 const submitBtn = document.getElementById("submit-btn");
 /** @type {HTMLButtonElement} */
 const healthyBtn = document.getElementById("healthy-btn");
+/** @type {HTMLButtonElement} */
+const bmiBtn = document.getElementById("bmi-btn");
 /** @type {HTMLInputElement} */
 const idInput = document.getElementById("input-id");
 /** @type {HTMLInputElement} */
@@ -145,6 +148,14 @@ function getValidatedMessages(data) {
 }
 
 /**
+ * @param {PetData} pet
+ */
+function getBMI(pet) {
+  const factor = pet.type === "Dog" ? 703 : 886;
+  return (pet.weight * factor) / (pet.length * pet.length);
+}
+
+/**
  * @param {PetData} data
  */
 function validateData(data) {
@@ -203,6 +214,7 @@ function renderTableData(pets, healthyCheck) {
           <td><i class="bi bi-${
             p.sterilized ? "check" : "x"
           }-circle-fill"></i></td>
+          <td>${isNaN(p.bmi) ? "?" : p.bmi.toFixed(2)}</td>
           <td>${getDateString(p.date)}</td>
           <td>
             <button type="button" class="btn btn-danger" onclick="deletePet('${
@@ -243,6 +255,7 @@ submitBtn.addEventListener("click", function (e) {
     dewormed: dewormedInput.checked,
     sterilized: sterilizedInput.checked,
     date: new Date(),
+    bmi: NaN,
   };
 
   const validate = validateData(data);
@@ -259,6 +272,11 @@ submitBtn.addEventListener("click", function (e) {
 
 healthyBtn.addEventListener("click", function () {
   healthyCheck = !healthyCheck;
+  renderTableData(petArr, healthyCheck);
+});
+
+bmiBtn.addEventListener("click", function () {
+  petArr.forEach((p) => (p.bmi = getBMI(p)));
   renderTableData(petArr, healthyCheck);
 });
 

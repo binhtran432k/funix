@@ -229,6 +229,9 @@
                 <button type="button" class="btn btn-warning" id="healthy-btn">
                   Show Healthy Pet
                 </button>
+                <button type="button" class="btn btn-warning" id="bmi-btn">
+                  Calculate BMI
+                </button>
               </form>
             </div>
           </div>
@@ -248,50 +251,12 @@
                 <th scope="col">Vaccinated</th>
                 <th scope="col">Dewormed</th>
                 <th scope="col">Sterilized</th>
+                <th scope="col">BMI</th>
                 <th scope="col">Date Added</th>
                 <th scope="col">Action</th>
               </tr>
             </thead>
-            <tbody id="tbody">
-              <tr>
-                <th scope="row">P001</th>
-                <td>Tom</td>
-                <td>3</td>
-                <td>Cat</td>
-                <td>5 kg</td>
-                <td>50 cm</td>
-                <td>Tabby</td>
-                <td>
-                  <i class="bi bi-square-fill" style="color: red"></i>
-                </td>
-                <td><i class="bi bi-check-circle-fill"></i></td>
-                <td><i class="bi bi-check-circle-fill"></i></td>
-                <td><i class="bi bi-check-circle-fill"></i></td>
-                <td>01/03/2022</td>
-                <td>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">P002</th>
-                <td>Tyke</td>
-                <td>5</td>
-                <td>Dog</td>
-                <td>3 kg</td>
-                <td>40 cm</td>
-                <td>Mixed Breed</td>
-                <td>
-                  <i class="bi bi-square-fill" style="color: green"></i>
-                </td>
-                <td><i class="bi bi-x-circle-fill"></i></td>
-                <td><i class="bi bi-x-circle-fill"></i></td>
-                <td><i class="bi bi-x-circle-fill"></i></td>
-                <td>02/03/2022</td>
-                <td>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-            </tbody>
+            <tbody id="tbody"></tbody>
           </table>
         </div>
       </div>
