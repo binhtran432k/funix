@@ -18,6 +18,8 @@
 
 /** @type {HTMLButtonElement} */
 const submitBtn = document.getElementById("submit-btn");
+/** @type {HTMLButtonElement} */
+const healthyBtn = document.getElementById("healthy-btn");
 /** @type {HTMLInputElement} */
 const idInput = document.getElementById("input-id");
 /** @type {HTMLInputElement} */
@@ -72,6 +74,7 @@ const petArr = [
     date: new Date("2022-03-02"),
   },
 ];
+let healthyCheck = false;
 
 function parseNumber(value) {
   return value ? Number(value) : NaN;
@@ -169,9 +172,15 @@ function clearInput() {
 
 /**
  * @param {PetData[]} pets
+ * @param {boolean} healthyCheck
  */
-function renderTableData(pets) {
+function renderTableData(pets, healthyCheck) {
   const petHtml = pets
+    .filter(
+      (p) =>
+        !healthyCheck ||
+        (healthyCheck && p.vaccinated && p.dewormed && p.sterilized),
+    )
     .map(
       (p) => `
         <tr>
@@ -196,15 +205,28 @@ function renderTableData(pets) {
           }-circle-fill"></i></td>
           <td>${getDateString(p.date)}</td>
           <td>
-            <button type="button" class="btn btn-danger" data="${
+            <button type="button" class="btn btn-danger" onclick="deletePet('${
               p.id
-            }">Delete</button>
+            }')">Delete</button>
           </td>
         </tr>
       `,
     )
     .join("\n");
   document.getElementById("tbody").innerHTML = petHtml;
+  document.getElementById("healthy-btn").innerText = healthyCheck
+    ? "Show All Pet"
+    : "Show Healthy Pet";
+}
+
+/**
+ * @param {string} petId
+ */
+function deletePet(petId) {
+  if (confirm("Are you sure?")) {
+    petArr.splice(0, petArr.length, ...petArr.filter((p) => p.id !== petId));
+    renderTableData(petArr, healthyCheck);
+  }
 }
 
 submitBtn.addEventListener("click", function (e) {
@@ -227,7 +249,7 @@ submitBtn.addEventListener("click", function (e) {
   if (validate) {
     petArr.push(data);
     clearInput();
-    renderTableData(petArr);
+    renderTableData(petArr, healthyCheck);
   } else {
     e.preventDefault();
     return false;
@@ -235,4 +257,10 @@ submitBtn.addEventListener("click", function (e) {
   return true;
 });
 
-renderTableData(petArr);
+healthyBtn.addEventListener("click", function () {
+  healthyCheck = !healthyCheck;
+  renderTableData(petArr, healthyCheck);
+});
+
+renderTableData(petArr, healthyCheck);
+
