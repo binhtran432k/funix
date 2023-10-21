@@ -1,0 +1,91 @@
+{
+    "petArr": [
+        {
+            "id": "P003",
+            "name": "Jerry",
+            "age": 2,
+            "type": "Cat",
+            "weight": 6,
+            "length": 47,
+            "color": "#00ccff",
+            "breed": "Domestic Medium Hair",
+            "vaccinated": false,
+            "dewormed": true,
+            "sterilized": false,
+            "date": "2023-10-21T01:36:55.798Z",
+            "bmi": 2.406518786781349
+        },
+        {
+            "id": "P004",
+            "name": "Zigg",
+            "age": 3,
+            "type": "Cat",
+            "weight": 5,
+            "length": 50,
+            "color": "#d4ff00",
+            "breed": "Tabby",
+            "vaccinated": true,
+            "dewormed": false,
+            "sterilized": true,
+            "date": "2023-10-21T01:39:03.842Z",
+            "bmi": null
+        },
+        {
+            "id": "P005",
+            "name": "Tom",
+            "age": 3,
+            "type": "Cat",
+            "weight": 5,
+            "length": 50,
+            "color": "#ff0000",
+            "breed": "Tabby",
+            "vaccinated": true,
+            "dewormed": true,
+            "sterilized": true,
+            "date": "2023-10-21T01:44:48.133Z",
+            "bmi": 1.772
+        }
+    ],
+    "breedArr": [
+        {
+            "type": "Cat",
+            "name": "Domestic Medium Hair"
+        },
+        {
+            "type": "Dog",
+            "name": "Mixed Breed"
+        },
+        {
+            "type": "Cat",
+            "name": "Domestic Short Hair"
+        },
+        {
+            "type": "Cat",
+            "name": "Terrier"
+        },
+        {
+            "type": "Dog",
+            "name": "Husky"
+        },
+        {
+            "type": "Cat",
+            "name": "Greyhound"
+        },
+        {
+            "type": "Dog",
+            "name": "Doberman Pinscher"
+        },
+        {
+            "type": "Cat",
+            "name": "Persian"
+        },
+        {
+            "type": "Cat",
+            "name": "Rottweiler"
+        },
+        {
+            "name": "Tabby",
+            "type": "Cat"
+        }
+    ]
+}
