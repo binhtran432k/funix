@@ -1,3 +1,6 @@
 .direnv/
 *.zip
 node_modules/
+
+# For testing purpose
+test/
