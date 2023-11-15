@@ -1,0 +1,12 @@
+extends layout.pug
+
+block variable
+  - var isAddProduct = true
+
+block content
+  form.form-add-product(action="product", method="post")
+    h1= pageTitle
+    .form-control
+      input(type="text", name="product")
+    .form-control
+      button.btn-add-product(type="submit") Add Product

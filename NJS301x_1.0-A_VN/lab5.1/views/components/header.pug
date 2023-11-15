@@ -1,0 +1,8 @@
+mixin item(href, title, active=false)
+  li
+    a(href=href, class={active:active})= title
+
+header
+  ul
+    +item("/", "Shop", isShop)
+    +item("/add-product", "Add Product", isAddProduct)

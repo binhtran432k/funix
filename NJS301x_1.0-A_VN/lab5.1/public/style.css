@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #00695c;
+  --secondary: #fdef3f;
+  font-family: sans-serif;
+}
+
+a:active,
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+header {
+  background-color: var(--primary);
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  padding: 1rem 1.5rem;
+}
+
+header li {
+  margin: 0 1rem;
+}
+
+header a {
+  color: #fff;
+}
+
+header a.active {
+  color: var(--secondary);
+}
+
+main {
+  padding: 1rem;
+  margin: auto;
+}
+
+.form-add-product {
+  width: 16rem;
+  margin: auto;
+}
+
+.form-control {
+  margin-bottom: 0.5rem;
+}
+
+.form-control input {
+  padding: 0.25rem;
+  border: 0.125rem solid gray;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.btn-add-product {
+  padding: 0.25rem;
+  background-color: #fff;
+  color: var(--primary);
+  border: 0.125rem solid var(--primary);
+  border-radius: 0.25rem;
+}
