@@ -1,0 +1,12 @@
+.bg-success {
+  color: #fff;
+  background-color: #53c57b !important;
+}
+
+.danger {
+  color: #f54d4d !important;
+}
+
+.fs-5 {
+  font-size: 1.125rem;
+}
