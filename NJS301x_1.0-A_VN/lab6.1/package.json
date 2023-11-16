@@ -1,0 +1,22 @@
+{
+  "name": "lab6.1",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Connect ReactJS with NodeJS",
+  "scripts": {
+    "dev:server": "npm run -w server dev",
+    "dev:client": "npm run -w client dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "keywords": [
+    "react",
+    "node",
+    "javascript"
+  ],
+  "author": "Binh Duc Tran <binhtran432k@gmail.com>",
+  "license": "ISC"
+}
