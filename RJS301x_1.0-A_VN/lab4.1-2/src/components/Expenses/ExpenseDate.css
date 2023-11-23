@@ -1,0 +1,29 @@
+.ExpenseDate {
+  --size: 5.5rem;
+  background-color: var(--bg-dark);
+  width: var(--size);
+  height: var(--size);
+  border: 1px solid var(--fg);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem;
+}
+
+.expense-month,
+.expense-year {
+  font-size: 0.875rem;
+  margin-bottom: 0.3rem;
+}
+
+.expense-year {
+  color: var(--gray);
+  flex-grow: 1;
+}
+
+.expense-day {
+  font-size: 1.375rem;
+  font-weight: 700;
+}

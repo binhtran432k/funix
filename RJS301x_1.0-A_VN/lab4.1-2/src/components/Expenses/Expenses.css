@@ -1,0 +1,8 @@
+.Expenses {
+  margin: 2rem auto;
+  max-width: var(--body-width);
+  background-color: var(--bg-darker);
+  color: var(--fg);
+  border-radius: 0.6rem;
+  padding: 1rem;
+}

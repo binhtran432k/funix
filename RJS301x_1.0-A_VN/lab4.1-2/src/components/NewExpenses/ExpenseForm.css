@@ -1,0 +1,53 @@
+.ExpenseForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.expense-form__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.expense-form__group {
+  flex-basis: 50%;
+}
+
+.expense-form__group label {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem;
+}
+
+.expense-form__group input {
+  border-radius: 0.25rem;
+  border: none;
+  padding: 0.4rem;
+}
+
+.expense-form__button-group {
+  display: flex;
+  gap: 0.4rem;
+  align-self: end;
+}
+
+.expense-form__button--cancel,
+.expense-form__button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: var(--fg);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.expense-form__button {
+  background-color: var(--primary);
+}
+
+.expense-form__button--cancel {
+  background-color: var(--gray);
+}
+
+.expense-form__button--cancel:hover,
+.expense-form__button:hover {
+  opacity: 0.8;
+}
