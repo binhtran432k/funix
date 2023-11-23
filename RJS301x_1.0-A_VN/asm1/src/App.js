@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Detail, Home, Search } from "./pages";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -12,5 +14,7 @@ function App() {
     </BrowserRouter>
   );
 }
+
+library.add(fas);
 
 export default App;
