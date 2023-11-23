@@ -1,0 +1,19 @@
+.form-control label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.form-control input {
+  margin: 0.5rem 0;
+  border: 2px solid lightgray;
+  padding: 0.2rem;
+}
+
+.invalid label {
+  color: red;
+}
+
+.invalid input {
+  background-color: red;
+}

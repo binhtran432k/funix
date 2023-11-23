@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+}
+
+#goal-form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem;
+  padding: 2rem;
+  max-width: 28rem;
+  margin: 3rem auto;
+}
+
+#goals {
+  max-width: 36rem;
+  margin: auto;
+}
