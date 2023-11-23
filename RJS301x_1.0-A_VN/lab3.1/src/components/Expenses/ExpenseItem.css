@@ -1,0 +1,30 @@
+.ExpenseItem {
+  justify-content: space-between;
+  background-color: var(--bg-light);
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  margin: 1rem 0;
+}
+
+.ExpenseItem,
+.expense-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.expense-title {
+  margin-left: 0.5rem;
+  font-weight: 700;
+}
+
+.expense-amount-container {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.expense-amount {
+  background-color: var(--primary);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--fg);
+  border-radius: 0.4rem;
+}

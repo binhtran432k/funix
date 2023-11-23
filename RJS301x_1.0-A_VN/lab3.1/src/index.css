@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #3f3f3f;
+  --fg: white;
+  --gray: gray;
+  --bg-dark: #2a2a2a;
+  --bg-darker: #1f1f1f;
+  --bg-light: #4b4b4b;
+  --primary: #40005d;
+  --secondary: #a892ee;
+  --body-width: 48rem;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: sans-serif;
+}

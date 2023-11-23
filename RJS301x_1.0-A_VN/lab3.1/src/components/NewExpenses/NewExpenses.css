@@ -1,0 +1,7 @@
+.NewExpenses {
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: var(--body-width);
+  background-color: var(--secondary);
+  border-radius: 0.5rem;
+}
