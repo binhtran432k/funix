@@ -1,0 +1,29 @@
+.city {
+  padding: 1rem 0;
+}
+
+.city__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.city__item {
+  color: var(--light);
+  background-image: var(--city-img);
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex-grow: 1;
+  min-width: 15rem;
+  height: 15rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+.city__name {
+  font-size: 1.5rem;
+}
