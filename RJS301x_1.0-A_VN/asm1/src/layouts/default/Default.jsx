@@ -1,4 +1,4 @@
-import { Navbar, Subcribe } from "../../components";
+import { Footer, Navbar, Subcribe } from "../../components";
 
 const Default = (props) => {
   return (
@@ -9,6 +9,7 @@ const Default = (props) => {
       <main>{props.children}</main>
       <footer>
         <Subcribe />
+        <Footer />
       </footer>
     </>
   );
