@@ -12,7 +12,7 @@ const getRenderDate = (date) => {
 };
 
 const handleNavigateSearch = () => {
-  window.location.replace("/replace");
+  window.location.replace("/search");
 };
 
 const Header = () => {
