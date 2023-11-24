@@ -1,0 +1,37 @@
+.type {
+  padding: 1rem 0;
+}
+
+.type__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.type__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.type__item {
+  flex-grow: 1;
+  width: 10rem;
+}
+
+.type__image {
+  --radius: 0.5rem;
+  height: 8rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.type__name {
+  font-weight: 700;
+}
+
+.type__subtext {
+  font-size: 0.875rem;
+}

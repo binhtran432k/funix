@@ -1,4 +1,4 @@
-import { City, Header } from "../../components";
+import { City, Header, Type } from "../../components";
 import { Default } from "../../layouts";
 
 const Home = () => {
@@ -6,6 +6,7 @@ const Home = () => {
     <Default>
       <Header />
       <City />
+      <Type />
     </Default>
   );
 };
