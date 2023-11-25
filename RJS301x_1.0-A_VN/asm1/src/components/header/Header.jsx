@@ -42,11 +42,11 @@ const Header = () => {
               <span className="header-box__title">Where are you going?</span>
             </div>
             <div className="header-box__item">
-              <FontAwesomeIcon icon="fa-solid fa-calendar" />
+              <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
               {time.from} to {time.to}
             </div>
             <div className="header-box__item">
-              <FontAwesomeIcon icon="fa-solid fa-female" />
+              <FontAwesomeIcon icon="fa-solid fa-male" />
               {[
                 `${room.adult} adult`,
                 `${room.children} children`,
