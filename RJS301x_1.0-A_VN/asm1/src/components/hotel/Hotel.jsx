@@ -14,7 +14,7 @@ const Hotel = () => {
                 alt={hotel.name}
                 className="hotel__image"
               />
-              <div className="hotel__name">{hotel.name}</div>
+              <a href="/detail" className="hotel__name">{hotel.name}</a>
               <div className="hotel__city">{hotel.city}</div>
               <div className="hotel__price">Starting from ${hotel.price}</div>
               <div className="hotel__rate">

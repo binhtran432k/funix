@@ -33,6 +33,11 @@
   margin-top: 0.2rem;
 }
 
+.hotel__name:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
 .hotel__city {
   font-weight: 300;
   margin-top: 0.5rem;
