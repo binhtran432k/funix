@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-rgb: 0, 53, 128;
+  --secondary-rgb: 0, 113, 194;
+  --tertiary-rgb: 254, 187, 2;
+  --dark-rgb: 0, 0, 0;
+  --light-rgb: 255, 255, 255;
+  --gray-rgb: 204, 204, 204;
+  --dark-gray-rgb: 136, 136, 136;
+
+  --primary: rgb(var(--primary-rgb));
+  --secondary: rgb(var(--secondary-rgb));
+  --tertiary: rgb(var(--tertiary-rgb));
+  --dark: rgb(var(--dark-rgb));
+  --light: rgb(var(--light-rgb));
+  --dark-gray: rgb(var(--dark-gray-rgb));
+  --gray: rgb(var(--gray-rgb));
+
+  --max-width: 60rem;
+  --padding: 0.5rem;
+}
+
+body {
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+.container {
+  padding: 0 0.5rem;
+  max-width: 60rem;
+  margin: auto;
+}

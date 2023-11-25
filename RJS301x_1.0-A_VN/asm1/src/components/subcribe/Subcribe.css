@@ -1,0 +1,47 @@
+.subcribe {
+  margin-top: 3rem;
+  padding: 3rem 0;
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.subcribe__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subcribe__title {
+  font-size: 1.8rem;
+}
+
+.subcribe__description {
+  margin: 1rem 0;
+}
+
+.subcribe__form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.subcribe__input {
+  width: 18rem;
+}
+
+.subcribe__button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+.subcribe__button:hover {
+  background-color: rgba(var(--secondary-rgb), 0.8);
+}
+
+.subcribe__input,
+.subcribe__button {
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+}

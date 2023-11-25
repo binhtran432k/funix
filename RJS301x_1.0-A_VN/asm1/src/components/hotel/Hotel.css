@@ -1,0 +1,65 @@
+.hotel {
+  padding: 1rem 0;
+}
+
+.hotel__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hotel__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hotel__item {
+  --size: 12rem;
+  flex-grow: 1;
+  width: var(--size);
+}
+
+.hotel__image {
+  width: 100%;
+  height: var(--size);
+}
+
+.hotel__name {
+  color: indigo;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-top: 0.2rem;
+}
+
+.hotel__name:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.hotel__city {
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+.hotel__price {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.hotel__rate {
+  margin-top: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.hotel__rate-number {
+  background-color: var(--primary);
+  color: var(--light);
+  display: inline-block;
+  padding: 0.2rem 0.3rem;
+  font-weight: 700;
+}

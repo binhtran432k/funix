@@ -1,0 +1,82 @@
+.header__body {
+  background-color: var(--primary);
+  color: var(--light);
+  padding-bottom: 2rem;
+}
+
+.header__title {
+  font-size: 1.75rem;
+}
+
+.header__description {
+  margin: 1rem 0;
+}
+
+.header__button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  color: var(--light);
+  background-color: var(--secondary);
+  border: none;
+}
+
+.header__button:hover {
+  background-color: rgba(var(--secondary-rgb), 0.8);
+}
+
+.header__footer {
+  background-image: linear-gradient(var(--primary) 50%, var(--light) 50%);
+  margin-bottom: 1rem;
+}
+
+.header-box {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+  justify-content: space-between;
+  background-color: var(--light);
+  border: 0.2rem solid var(--tertiary);
+  border-radius: 0.4rem;
+  color: var(--gray);
+  padding: 0.6rem 2rem;
+}
+
+.header-box__item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header-box__title {
+  font-size: 0.875rem;
+  color: var(--dark-gray);
+}
+
+.header-box__date {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.header-box__date:hover {
+  text-decoration: underline;
+}
+
+.date-modal {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50% 0;
+}
+
+.header-outside {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
