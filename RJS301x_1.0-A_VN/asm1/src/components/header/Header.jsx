@@ -1,15 +1,35 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getRenderDate } from "../../utils/date";
 import "./Header.css";
+import { useEffect, useRef, useState } from "react";
+import { DateRange } from "react-date-range";
 
 const handleNavigateSearch = () => {
   window.location.replace("/search");
 };
 
 const Header = () => {
+  const [showDate, setShowDate] = useState(false);
+  const [timeState, setTimeState] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
+  ]);
+  const dateRef = useRef(null);
+
   const time = {
-    from: getRenderDate(new Date("2022-06-24")),
-    to: getRenderDate(new Date("2022-06-24")),
+    from: getRenderDate(new Date(timeState[0].startDate)),
+    to: getRenderDate(new Date(timeState[0].endDate)),
+  };
+
+  const handleShowDate = () => {
+    setShowDate((x) => !x);
+  };
+
+  const handleClickOutside = () => {
+    setShowDate(false);
   };
 
   const room = {
@@ -20,6 +40,9 @@ const Header = () => {
 
   return (
     <div className="header">
+      {showDate && (
+        <div className="header-outside" onClick={handleClickOutside}></div>
+      )}
       <div className="header__body">
         <div className="container">
           <h2 className="header__title">
@@ -41,9 +64,22 @@ const Header = () => {
               <FontAwesomeIcon icon="fa-solid fa-bed" />
               <span className="header-box__title">Where are you going?</span>
             </div>
-            <div className="header-box__item">
-              <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
-              {time.from} to {time.to}
+            <div className="header-box__date">
+              <div className="header-box__item" onClick={handleShowDate}>
+                <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
+                {time.from} to {time.to}
+              </div>
+              {showDate && (
+                <DateRange
+                  minDate={new Date()}
+                  editableDateInputs={true}
+                  moveRangeOnFirstSelection={false}
+                  className="date-modal"
+                  onChange={(item) => setTimeState([item.selection])}
+                  ranges={timeState}
+                  ref={dateRef}
+                />
+              )}
             </div>
             <div className="header-box__item">
               <FontAwesomeIcon icon="fa-solid fa-male" />

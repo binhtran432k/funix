@@ -53,3 +53,30 @@
   font-size: 0.875rem;
   color: var(--dark-gray);
 }
+
+.header-box__date {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.header-box__date:hover {
+  text-decoration: underline;
+}
+
+.date-modal {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50% 0;
+}
+
+.header-outside {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
