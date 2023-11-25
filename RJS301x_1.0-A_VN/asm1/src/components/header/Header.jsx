@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import { DateRange } from "react-date-range";
 import { getRenderDate } from "../../utils/date";
 import "./Header.css";
-import { useEffect, useRef, useState } from "react";
-import { DateRange } from "react-date-range";
 
 const handleNavigateSearch = () => {
   window.location.replace("/search");
@@ -17,7 +17,6 @@ const Header = () => {
       key: "selection",
     },
   ]);
-  const dateRef = useRef(null);
 
   const time = {
     from: getRenderDate(new Date(timeState[0].startDate)),
@@ -77,7 +76,6 @@ const Header = () => {
                   className="date-modal"
                   onChange={(item) => setTimeState([item.selection])}
                   ranges={timeState}
-                  ref={dateRef}
                 />
               )}
             </div>
