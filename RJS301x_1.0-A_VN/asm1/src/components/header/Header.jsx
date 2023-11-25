@@ -1,15 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { getRenderDate } from "../../utils/date";
 import "./Header.css";
-
-/**
- * @param {Date} date
- */
-const getRenderDate = (date) => {
-  const month = date.toLocaleString("en-US", { month: "2-digit" });
-  const day = date.toLocaleString("en-US", { day: "2-digit" });
-  const year = date.getFullYear();
-  return `${month}/${day}/${year}`;
-};
 
 const handleNavigateSearch = () => {
   window.location.replace("/search");

@@ -1,8 +1,17 @@
+import { SearchList, SearchPopup } from "../../components";
+import { Default } from "../../layouts";
+import "./Search.css";
+
 const Search = () => {
   return (
-    <div>
-      <h1>Search Page</h1>
-    </div>
+    <Default>
+      <div className="search">
+        <div className="search__body container">
+          <SearchPopup />
+          <SearchList />
+        </div>
+      </div>
+    </Default>
   );
 };
 

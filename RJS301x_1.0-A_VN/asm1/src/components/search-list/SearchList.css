@@ -1,0 +1,117 @@
+.search-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  flex-grow: 1;
+  flex-basis: 30rem;
+}
+
+.search-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  border: 0.0625rem solid var(--gray);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.search-item__image {
+  --size: 12rem;
+  object-fit: cover;
+  width: var(--size);
+  height: var(--size);
+}
+
+.search-item__body {
+  flex-grow: 1;
+  flex-basis: 20rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.search-item__name {
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.search-item__distance,
+.search-item__tag,
+.search-item__description,
+.search-item__type,
+.search-item__free-cancel,
+.search-item__free-cancel-tip {
+  margin-top: 0.5rem;
+}
+
+.search-item__tag {
+  display: inline-block;
+  background-color: green;
+  color: var(--light);
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+
+.search-item__description,
+.search-item__free-cancel {
+  font-weight: 700;
+}
+
+.search-item__free-cancel,
+.search-item__free-cancel-tip {
+  color: green;
+}
+
+.search-item__right {
+  flex-shrink: 0;
+  width: 10rem;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+}
+
+.search-item__rate {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.search-item__rate-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.search-item__rate-number {
+  font-weight: 700;
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 0.2rem;
+}
+
+.search-item__price {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.search-item__price-tip {
+  font-size: 0.875em;
+  color: var(--dark-gray);
+  margin: 0.2rem 0;
+}
+
+.search-item__button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--secondary);
+  color: var(--light);
+  padding: 0.4rem 0.8rem;
+}
+
+.search-item__button:hover {
+  background-color: rgba(var(--secondary-rgb), 0.8);
+}
