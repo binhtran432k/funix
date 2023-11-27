@@ -4,7 +4,7 @@
 
 .search__body {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
