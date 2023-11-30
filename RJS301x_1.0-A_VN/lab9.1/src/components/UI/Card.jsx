@@ -1,0 +1,16 @@
+import PropTypes from "prop-types";
+import classes from "./Card.module.css";
+
+/**
+ * @type {React.FC<React.PropsWithChildren>}
+ */
+const Card = (props) => {
+  return <div className={classes.card}>{props.children}</div>;
+};
+
+Card.propTypes = {
+  children: PropTypes.node,
+};
+
+export default Card;
+
